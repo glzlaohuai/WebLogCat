@@ -12,13 +12,13 @@ implementation 'com.imob:weblogcat:0.0.1'
 ## init
 `WebLogCat.init(context);`
 
-##view logs
+## view logs
 visit `http://<your devices's local ip here>:8088` to view logs in your web browser. The lib will also log the full address to view logs during its initialization process. After the lib was inited, filter logs by tag `IMOB-WebLogCat`, then you'll get the address log.
 
 
-##log
+## log
 
 `WebLogCat.log(tag,msg,logLevel,throwable);`
 
-##screenshots
+## screenshots
 ![](md_res/screenshot.png)
