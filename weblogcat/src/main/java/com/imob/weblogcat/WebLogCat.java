@@ -87,7 +87,7 @@ public class WebLogCat {
                 }
             });
             webSocketServer.listen(WEB_SOCKET_PORT);
-            Log.i(TAG, "open: http://" + getIP() + ":8088 to view logs");
+            Log.i(TAG, "open: http://" + getIP() + ":" + HTTP_POPRT + " to view logs");
         } else {
             Log.e(TAG, "please connect wifi to use web logcat");
         }
