@@ -1,0 +1,3 @@
+include ':demo'
+include ':weblogcat'
+rootProject.name = "WebLogCat"

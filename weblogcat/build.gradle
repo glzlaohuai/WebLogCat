@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.library'
+    id 'com.github.panpf.bintray-publish'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+publish {
+    userOrg "imob"
+    groupId "com.imob"
+
+    artifactId "weblogcat"
+    publishVersion "1.0.0"
+    desc "view android's no-truncated logs on web"
+    website = "https://github.com/glzlaohuai/WebLogCat"
+}
+
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compileOnly 'com.koushikdutta.async:androidasync:2.+'
+
+}
