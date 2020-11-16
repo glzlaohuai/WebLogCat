@@ -32,9 +32,8 @@ android {
 publish {
     userOrg "imob"
     groupId "com.imob"
-
     artifactId "weblogcat"
-    publishVersion "1.0.0"
+    publishVersion System.getenv("COMMITED_TAG")
     desc "view android's no-truncated logs on web"
     website = "https://github.com/glzlaohuai/WebLogCat"
 }
