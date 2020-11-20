@@ -1,7 +1,7 @@
 # WebLogCat
 [ ![Download](https://api.bintray.com/packages/imob/maven/weblogcat/images/download.svg?version=0.0.1) ](https://bintray.com/imob/maven/weblogcat/0.0.1/link)
 
-view no-truncated android logs on web
+view no-truncated android logs in web browser
 
 ## Dependencies
 ```
