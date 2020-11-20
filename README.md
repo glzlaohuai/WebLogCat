@@ -3,7 +3,7 @@
 
 view no-truncated android logs on web
 
-## dependencies
+## Dependencies
 ```
 implementation 'com.koushikdutta.async:androidasync:2.+'
 implementation 'com.imob:weblogcat:0.0.1'
